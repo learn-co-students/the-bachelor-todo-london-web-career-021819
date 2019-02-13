@@ -52,15 +52,13 @@ def get_occupation(data_hash, hometown)
  end
 end
 
-def get_average_age_for_season(data, season)
-  # code here
+def get_average_age_for_season(data_hash, season)
+  age_total = 0
+  num_of_contestants = 0
 
-  contestant_ages = data[season].collect do |contestant|
-    contestant["age"].to_i
+  data_hash[season].each do |contestant_hash|
+    age_total += (contestant_hash["age"]).to_i
+    num_of_contestants += 1
   end
-
-  summed_ages = contestant_ages.reduce(0) {|sum, age| sum += age}
-  contestant_count =  contestant_ages.count.to_f
-  (summed_ages/contestant_count).round
-
+  (age_total / num_of_contestants.to_f).round(0)
 end
