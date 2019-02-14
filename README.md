@@ -79,7 +79,7 @@ JSON is structured as a collection of name/value pairs enclosed in curly bracesâ
 
 Run your testing suite to get started. Then, follow the test output together with the instructions below to solve this one. 
 
-1. Build a method, `get_first_name_of_season_winner`, that takes in two arguments, a hash called `data` (i.e. the data structure described above), and a season. The method should return the *first name* of that season's winner. **Hint**: you'll need to do some string manipulation to return only the first name of the winning lady. 
+1. Build a method,`get_first_name_of_season_winner`, that takes in two arguments, a hash called `data` (i.e. the data structure described above), and a season. The method should return the *first name* of that season's winner. **Hint**: you'll need to do some string manipulation to return only the first name of the winning lady. 
   * Think about how you will iterate through the hash to get to the level that contains a contestant's status. 
   * How will you check to see if a contestant's status equals "Winner"?
 2. Build a method, `get_contestant_name`, that takes in the data hash and an occupation string and returns the name of the woman who has that occupation. 
